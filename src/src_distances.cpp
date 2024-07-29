@@ -34,7 +34,7 @@ Rcpp::List cpp_sinkhorn13(arma::vec a, arma::vec b, arma::mat dab, double lambda
   
   arma::mat G = arma::exp(-costm/lambda);
   
-  if (arma::all(arma::vectorise(G) < 1e-20)){
+  if (arma::all(arma::vectorise(G) < 1e-30)){
     Rcpp::stop("* sinkhorn : regularization parameter 'lambda' is too small. Please use a larger number.");
   }
   
