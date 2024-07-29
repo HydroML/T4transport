@@ -26,5 +26,5 @@ install.packages("T4transport")
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("kisungyou/T4transport")
+devtools::install_github("HydroML/T4transport")
 ```
